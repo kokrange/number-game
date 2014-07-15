@@ -11,7 +11,6 @@ class ContainFirstStrategy extends Strategy {
 
     @Override
     public String execute(int number) {
-//        return first().word(first().getBase());
         return first().bareWord();
     }
 
