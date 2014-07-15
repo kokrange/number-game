@@ -1,5 +1,8 @@
 package game;
 
+import game.strategy.Strategy;
+import game.strategy.StrategyFactory;
+
 import java.util.*;
 
 class Student {

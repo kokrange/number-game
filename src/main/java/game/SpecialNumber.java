@@ -1,6 +1,6 @@
 package game;
 
-class SpecialNumber {
+public class SpecialNumber {
     private int _base;
     private String _word;
 
@@ -9,17 +9,23 @@ class SpecialNumber {
         _word = word;
     }
 
-    int getBase() {
-        return _base;
-    }
 
-    String word(int number) {
+    public String word(int number) {
         return isDivisible(number)
                 ? _word
                 : "";
     }
 
-    boolean isDivisible(int number) {
+    public  String bareWord() {
+        return word(_base);
+    }
+
+    public boolean contains(int number) {
+        return String.valueOf(number).contains(String.valueOf(_base));
+    }
+
+
+    public boolean isDivisible(int number) {
         return 0 == number % _base;
     }
 }
